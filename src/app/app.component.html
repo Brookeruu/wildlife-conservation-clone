@@ -9,5 +9,6 @@
 
 <app-edit-main-list [selectedMainImg]="selectedMainImg" (clickedDone)="finishedEditingApp()"></app-edit-main-list>
 
+<app-add-main-img (sendMainImg)="addMainImg($event)"></app-add-main-img>
+
  <!-- [childMainImgList]="masterMainImgScrollList" -->
-<!-- [selectedMainImg]="selectedMainImg" (clickedDone)="finishedEditingApp()" -->

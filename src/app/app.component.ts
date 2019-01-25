@@ -23,4 +23,8 @@ export class AppComponent {
   finishedEditingApp() {
     this.selectedMainImg = null;
   }
+
+  addMainImg(newMainImg: MainImgComponent) {
+    this.masterMainImgScrollList.push(newMainImg);
+  }
 }

@@ -13,4 +13,15 @@ export class AddMainImgComponent {
     let newMainImg: MainImgComponent = new MainImgComponent(species, description, link);
     this.sendMainImg.emit(newMainImg);
   }
+
+  selectedHeader = null;
+
+  newMainImgForm() {
+    this.selectedHeader = true;
+  }
+
+  finishedAddNew() {
+    this.selectedHeader = null;
+  }
+
 }
