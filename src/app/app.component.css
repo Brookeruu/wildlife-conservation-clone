@@ -1,0 +1,17 @@
+.redWords {
+  color: #e84c3c;;
+}
+
+#centerWords {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 55px;
+}
+
+p {
+  text-align: center;
+  color: black;
+  font-size: 23px;
+  font-family: 'Lora', serif;
+}

@@ -12,7 +12,7 @@
     <div class="form-group">
       <label>Enter Link:</label>
       <input #newLink class="form-control">
-      <button type="button" class="btn btn-primary" (click)="submitForm(newSpecies.value, newDescription.value, newLink.value); newSpecies.value=''; newDescription.value=''; newLink.value=''; finishedAddNew();">Add New Species</button>
+      <button type="button" class="btn btn-primary" (click)="submitForm(newSpecies.value, newDescription.value, newLink.value); newSpecies.value=''; newDescription.value=''; newLink.value=''; finishedAddNew();"><span id="addButtonText">Add New Species</span></button>
       <button class="btn btn-danger"(click)="cancelAddNew()">Cancel</button>
       <!-- <button (click)="finishedAddNew()">Add Species!</button> -->
     </div>
