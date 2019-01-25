@@ -1,3 +1,5 @@
-<p>
-  edit-main-list works!
-</p>
+<div *ngIf="selectedMainImg">
+<h3>Edit Kombucha</h3>
+<input [(ngModel)]="selectedMainImg.description" placeholder="Update description:">
+<button (click)="finishedEditing()">Done!</button>
+</div>

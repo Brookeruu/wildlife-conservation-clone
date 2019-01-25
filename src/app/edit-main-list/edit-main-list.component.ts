@@ -7,10 +7,10 @@ import { MainImgComponent } from '../models/mainImg.model';
   styleUrls: ['./edit-main-list.component.css']
 })
 export class EditMainListComponent{
-  @Input() childSelectedMainImg: MainImgComponent;
+  @Input() selectedMainImg: MainImgComponent;
   @Output() clickedDone = new EventEmitter();
 
+  finishedEditing() {
+    this.clickedDone.emit();
+  };
 };
-  // finishedEditing() {
-  //   this.clickedDone.emit();
-  // };
