@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Wildlife Conservation Clone';
+  masterMainImgScrollList: MainImgComponent[] = [
+    new MainImgComponent('Rhinos', "A brief description about rhinos", "link-to-rhino-page"),
+    new MainImgComponent('Flying Squirrels', "A brief description about the missing flying squirrel", "link-to-flying-squirrel-page"),
+    new MainImgComponent('Dwarf Buffalo', "A brief description about dwarf buffalo", "link-to-dwarf-buffalo-page"),
+  ]
+
 }
