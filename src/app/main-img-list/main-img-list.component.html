@@ -1,5 +1,5 @@
 <h2>Main Images & Animal Info Landing: </h2>
-<div class="grid-container">
+<!-- <div class="grid-container">
   <div>
     <div class="grid-item" *ngFor="let currentMainImg of childMainImgList">
       <h2>{{currentMainImg.species}}</h2>
@@ -8,4 +8,36 @@
       <button class="btn btn-outline-info" (click)="editMainImgClicked(currentMainImg)">Edit Description</button>
     </div>
   </div>
+</div> -->
+
+<div id="mainImgCarousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="./assets/img/rhino.jpg" alt="First slide">
+      <div class="carousel-caption d-none d-lg-block">
+        <h5>Test Heading</h5>
+        <p>test description</p>
+        <p><a href="#">Link Here</a></p>
+        <button class="btn btn-outline-info" (click)="editMainImgClicked(currentMainImg)">Edit Description</button>
+      </div>
+    </div>
+    <div class="carousel-item" *ngFor="let currentMainImg of childMainImgList">
+      <img class="d-block w-100" src="./assets/img/rhino.jpg" alt="Added slide">
+      <div class="carousel-caption d-none d-lg-block">
+        <h5>{{currentMainImg.species}}</h5>
+        <p>{{currentMainImg.description}}</p>
+        <p><a href="#">{{currentMainImg.link}}</a></p>
+        <button class="btn btn-outline-info" (click)="editMainImgClicked(currentMainImg)">Edit Description</button>
+      </div>
+    </div>
+
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
