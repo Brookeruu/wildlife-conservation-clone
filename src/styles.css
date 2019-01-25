@@ -2,9 +2,32 @@
 nav.top-bar {
   background: #333333;
   height: 45px;
+  margin-bottom: 0px;
 }
 
 nav.tab-bar {
+
   background: #F2F0EC;
-  height: 100px;
+  height: 120px;
+}
+
+ul#menu-top li{
+  
+}
+
+img.logo {
+  height: 74px;
+  min-height: 74px;
+  vertical-align: middle;
+
+}
+
+nav.tab-bar img.logo {
+  /* padding-left: 10px;
+  padding-top: 20px; */
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
 }
