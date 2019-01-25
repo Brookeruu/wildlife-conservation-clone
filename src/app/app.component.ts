@@ -14,4 +14,13 @@ export class AppComponent {
     new MainImgComponent('Dwarf Buffalo', "A brief description about dwarf buffalo", "link-to-dwarf-buffalo-page")
   ];
 
+  selectedMainImg: null;
+
+  editMainImgInfo(clickedMainImg){
+  this.selectedMainImg = clickedMainImg;
+  }
+
+  finishedEditingApp() {
+    this.selectedMainImg = null;
+  }
 }

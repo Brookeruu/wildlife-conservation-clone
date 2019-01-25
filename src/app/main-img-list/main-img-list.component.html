@@ -1,16 +1,11 @@
 <h2>Main Images & Animal Info Landing: </h2>
 <div class="grid-container">
   <div>
-    <ul class="grid-item" *ngFor="let currentMainImg of childMainImgList">
-      <li>
-        <h2>{{currentMainImg.species}}</h2>
-      </li>
-      <li>
-        <h2>{{currentMainImg.description}}</h2>
-      </li>
-      <li>
-        <h2><a>{{currentMainImg.link}}</a></h2>
-      </li>
-    </ul>
+    <div class="grid-item" *ngFor="let currentMainImg of childMainImgList">
+      <h2>{{currentMainImg.species}}</h2>
+      <h3>{{currentMainImg.description}}</h3>
+      <h3><a href="">{{currentMainImg.link}}</a></h3>
+      <button class="btn btn-outline-info" (click)="editMainImgClicked(currentMainImg)">Edit Description</button>
+    </div>
   </div>
 </div>

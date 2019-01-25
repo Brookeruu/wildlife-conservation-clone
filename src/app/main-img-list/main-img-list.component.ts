@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { MainImgComponent } from '../models/mainImg.model';
 
 @Component({
@@ -7,9 +7,16 @@ import { MainImgComponent } from '../models/mainImg.model';
   styleUrls: ['./main-img-list.component.css']
 })
 export class MainImgListComponent {
-  @Input() childMainImgList: MainImgListComponent[];
+  @Input() childMainImgList: MainImgComponent[];
+  @Output() clickSender = new EventEmitter();
 
-  // 
+
+  editMainImgClicked(mainImgToEdit: MainImgComponent){
+    this.clickSender.emit(mainImgToEdit);
+  }
+
+
+  //
   // constructor() { }
   //
   // ngOnInit() {

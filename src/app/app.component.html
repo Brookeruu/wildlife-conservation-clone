@@ -5,6 +5,9 @@
   </h1>
 </div>
 
-<app-main-img-list [childMainImgList]="masterMainImgScrollList"></app-main-img-list>
+<app-main-img-list [childMainImgList]="masterMainImgScrollList" (clickSender)="editMainImgInfo($event)"></app-main-img-list>
+
+<app-edit-main-list [selectedMainImg]="selectedMainImg" (clickedDone)="finishedEditingApp()"></app-edit-main-list>
 
  <!-- [childMainImgList]="masterMainImgScrollList" -->
+<!-- [selectedMainImg]="selectedMainImg" (clickedDone)="finishedEditingApp()" -->
