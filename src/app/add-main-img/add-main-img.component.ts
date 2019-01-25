@@ -24,4 +24,8 @@ export class AddMainImgComponent {
     this.selectedHeader = null;
   }
 
+  cancelAddNew() {
+    this.selectedHeader = null;
+  }
+
 }
