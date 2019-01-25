@@ -1,25 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
-nav.top-bar {
+#menu-top {
   background: #333333;
   height: 45px;
   margin-bottom: 0px;
+  color: white;
 }
 
 nav.tab-bar {
-
   background: #F2F0EC;
   height: 120px;
 }
 
-ul#menu-top li{
-  
-}
 
 img.logo {
   height: 74px;
   min-height: 74px;
   vertical-align: middle;
+}
 
+.nav-tabs {
+  color: white;
+  font-weight: bold;
 }
 
 nav.tab-bar img.logo {
