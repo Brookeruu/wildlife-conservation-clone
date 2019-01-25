@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+nav.top-bar {
+  background: #333333;
+  height: 45px;
+}
+
+nav.tab-bar {
+  background: #F2F0EC;
+  height: 100px;
+}
