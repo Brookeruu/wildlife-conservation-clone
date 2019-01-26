@@ -1,4 +1,4 @@
-<h2>Main Images & Animal Info Landing: </h2>
+<!-- <h2>Main Images & Animal Info Landing: </h2> -->
 <!-- <div class="grid-container">
   <div>
     <div class="grid-item" *ngFor="let currentMainImg of childMainImgList">
@@ -15,15 +15,15 @@
     <div class="carousel-item active">
       <img class="d-block w-100" src="./assets/img/rhino.jpg" alt="First slide">
       <div class="carousel-caption d-none d-lg-block">
-        <h5>Test Heading</h5>
-        <p>test description</p>
-        <p><a href="#">Link Here</a></p>
+        <h3>Rhinos</h3>
+        <p>Morbi sed tellus nibh tristique varius</p>
+        <p><a href="#">Learn More</a></p>
       </div>
     </div>
     <div class="carousel-item" *ngFor="let currentMainImg of childMainImgList">
       <img class="d-block w-100" src="./assets/img/rhino.jpg" alt="Added slide">
       <div class="carousel-caption d-none d-lg-block">
-        <h5>{{currentMainImg.species}}</h5>
+        <h3>{{currentMainImg.species}}</h3>
         <p>{{currentMainImg.description}}</p>
         <p><a href="#">{{currentMainImg.link}}</a></p>
         <button type="button" class="btn btn-outline-info" (click)="editMainImgClicked(currentMainImg)">Edit Description</button>

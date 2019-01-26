@@ -6,19 +6,27 @@
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:500" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-      <p class="navbar-brand"></p>
+      <!-- <p class="navbar-brand"></p> -->
+
       <ul id="menu-top" class="nav-bar nav ml-auto">
-        <li class="nav-item active"><a href="#">DONATE</a></li>
-        <li class="nav-item active"><a href="#">SIGN-UP</a></li>
-        <li class="nav-item active"><a href="#">PRESS ROOM<a/></li>
+        <li class="navbar-brand" id="hidden-nav"></li>
+        <li class="nav-item active ml-auto"><a class="nav-link" href="#">DONATE</a></li>
+        <li class="nav-item active ml-auto"><a class="nav-link" href="#">SIGN-UP</a></li>
+        <li class="nav-item active ml-auto"><a class="nav-link" href="#">PRESS ROOM<a/></li>
       </ul>
 
     <nav class="tab-bar">
-      <img class ="logo" src="./assets/img/GlobalWildConserv.png" scale="0">
-
+      <ul class="nav-bar nav">
+        <img class="logo navbar-brand" src="./assets/img/GlobalWildConserv.png" scale="0">
+        <li class="nav-item active ml-auto">About</li>
+        <li class="nav-item active ml-auto">Work</li>
+        <li class="nav-item active ml-auto">Get Involved</li>
+        <li class="nav-item active ml-auto">Blog</li>
+      </ul>
     </nav>
 
   <div class="container">

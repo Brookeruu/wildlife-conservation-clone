@@ -32,8 +32,8 @@ export class AppComponent {
   // -----------
 
   masterGetInvolvedList: GetInvolvedComponent[] = [
-    new GetInvolvedComponent('INDIVIDUAL DONORS', "Aenean ante magna, dapibus a lacinia eu, interdum eu nisi."),
-    new GetInvolvedComponent('MAJOR DONORS', "Donec convallis est non felis porta, at consectetur sem tempus. l"),
-    new GetInvolvedComponent('CORPORATE SPONSORS', "Morbi sed tellus nibh. Pellentesque egestas, risus sagittis tristique varius.")
+    new GetInvolvedComponent('INDIVIDUAL DONORS', "Aenean ante magna, dapibus a lacinia eu, interdum eu nisi. Donec non velit id nulla pretium malesuada. Vivamus cursus mollis felis, nec dignissim ipsum molestie id."),
+    new GetInvolvedComponent('MAJOR DONORS', "Donec convallis est non felis porta, at consectetur sem tempus. Knulla imperdiet ut. Etiam tempus efficitur tincidunt. Morbi efficitur arcu neque, vitae egestas lacus fermentum sit amet. Phasellus ullamcorper dui neque, et tempor augue finibus sed."),
+    new GetInvolvedComponent('CORPORATE SPONSORS', "Morbi sed tellus nibh. Pellentesque egestas, risus sagittis tristique varius.  Aenean ante magna, dapibus a lacinia eu, interdum eu nisi. Phasellus placerat, nisl in egestas rhoncus, nisi massa volutpat est, et aliquam ex nunc ut urna.")
   ];
 }

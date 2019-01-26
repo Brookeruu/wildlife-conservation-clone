@@ -1,3 +1,7 @@
+body {
+
+}
+
 #menu-top {
   background: #333333;
   height: 45px;
@@ -10,11 +14,20 @@ nav.tab-bar {
   height: 120px;
 }
 
+nav li {
+  color: green;
+}
+
+p {
+  color: green;
+}
+
 
 img.logo {
   height: 74px;
   min-height: 74px;
   vertical-align: middle;
+  margin: 20px;
 }
 
 .nav-tabs {
@@ -22,10 +35,6 @@ img.logo {
   font-weight: bold;
 }
 
-nav.tab-bar img.logo {
-  /* padding-left: 10px;
-  padding-top: 20px; */
-}
 
 img {
   display: inline-block;
