@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MainImgComponent } from './models/mainImg.model';
+import { GetInvolvedComponent } from './models/get-involved.model';
 
 @Component({
   selector: 'app-root',
@@ -27,4 +28,12 @@ export class AppComponent {
   addMainImg(newMainImg: MainImgComponent) {
     this.masterMainImgScrollList.push(newMainImg);
   }
+
+  // -----------
+
+  masterGetInvolvedList: GetInvolvedComponent[] = [
+    new GetInvolvedComponent('INDIVIDUAL DONORS', "Aenean ante magna, dapibus a lacinia eu, interdum eu nisi."),
+    new GetInvolvedComponent('MAJOR DONORS', "Donec convallis est non felis porta, at consectetur sem tempus. l"),
+    new GetInvolvedComponent('CORPORATE SPONSORS', "Morbi sed tellus nibh. Pellentesque egestas, risus sagittis tristique varius.")
+  ];
 }

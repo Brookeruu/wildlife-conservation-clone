@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { MainImgListComponent } from './main-img-list/main-img-list.component';
 import { EditMainListComponent } from './edit-main-list/edit-main-list.component';
 import { AddMainImgComponent } from './add-main-img/add-main-img.component';
+import { GetInvolvedListComponent } from './get-involved-list/get-involved-list.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { AddMainImgComponent } from './add-main-img/add-main-img.component';
     AppComponent,
     MainImgListComponent,
     EditMainListComponent,
-    AddMainImgComponent
+    AddMainImgComponent,
+    GetInvolvedListComponent
   ],
   imports: [
     SlideshowModule,

@@ -1,3 +1,15 @@
-<p>
-  get-involved-list works!
-</p>
+<h2>Get Involved</h2>
+
+<div class="grid-container">
+
+  <div class="grid-item" style="width: 18rem" *ngFor="let currentGetInvolved of childGetInvolvedList">
+
+
+      <h2 class="">{{ currentGetInvolved.title }}</h2>
+      
+      <p>{{currentGetInvolved.description}}</p>
+
+      <button class="btn btn-outline-info" (click)="editButtonClicked(currentGetInvolved)">Learn More</button>
+
+  </div>
+</div>
