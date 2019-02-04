@@ -2,7 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule }  from '@angular/forms';
 import {SlideshowModule} from 'ng-simple-slideshow';
-
+// import { TooltipModule } from 'ngx-bootstrap/tooltip';
+// import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 import { AppComponent } from './app.component';
 import { MainImgListComponent } from './main-img-list/main-img-list.component';
@@ -22,7 +23,9 @@ import { GetInvolvedListComponent } from './get-involved-list/get-involved-list.
   imports: [
     SlideshowModule,
     BrowserModule,
-    FormsModule
+    FormsModule,
+    // TooltipModule.forRoot(),
+    // CarouselModule.forRoot()
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   providers: [],

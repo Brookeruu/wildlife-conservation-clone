@@ -1,15 +1,16 @@
-<h2>Get Involved</h2>
 
-<div class="grid-container">
+  <h2>Get Involved</h2>
 
-  <div class="grid-item" style="width: 18rem" *ngFor="let currentGetInvolved of childGetInvolvedList">
+  <div class="grid-container">
+
+    <div class="grid-item" style="width: 18rem" *ngFor="let currentGetInvolved of childGetInvolvedList">
 
 
-      <h4 class="">{{ currentGetInvolved.title }}</h4>
+        <h4 class="">{{ currentGetInvolved.title }}</h4>
 
-      <p>{{currentGetInvolved.description}}</p>
+        <p>{{currentGetInvolved.description}}</p>
 
-      <button class="btn btn-outline-success" (click)="editButtonClicked(currentGetInvolved)">Learn More</button>
+        <button class="btn btn-outline-success" (click)="editButtonClicked(currentGetInvolved)">Learn More</button>
 
+    </div>
   </div>
-</div>
